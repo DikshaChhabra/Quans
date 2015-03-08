@@ -5,7 +5,6 @@ class login extends CI_Controller
 	
 	function index()
 	{
-		echo "hii";
 		$data['main_content'] = 'login_form';
 		$this->load->view('includes/template',$data);
 	}
@@ -17,12 +16,12 @@ class login extends CI_Controller
 				'username' => $this->input->post('username'),
 				'is_logged_in' => true);
 			$this->session->set_userdata($data);
-			echo "hii";
 			redirect('site/members_area');
 
 		}
 		else{
 			$this->index();
+			echo "enter username and password";
 		}
 	}
 	function signup(){
