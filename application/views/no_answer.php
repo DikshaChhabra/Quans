@@ -7,21 +7,19 @@
                         <!-- Body -->
                             <div class="modal-body">
                                 <div id="content_noAnswer">
-                                    <p id="answer_note">congrats, sign up complete</p>
-                                     <img src="../../img/smile2.jpeg">
+                                    <p id="answer_note">SOoRY! You Already Gave Answer</p>
+                                     <img src="../../img/smiley.jpg">
                                 </div>       
                             </div>
                           <!-- Footer -->
                             <div class="modal-footer" id="modal_footer_answer">
                                 <?php
-                                echo anchor('login/index','Login','class="btn btn-primary unAnswerBtnClose"'); ?>
+                                echo anchor('site/members_area','Back','class="btn btn-primary unAnswerBtnClose"'); ?>
                             </div>
                     </div>
                 </div>
             </div>
 </div>
-
-
 
 
 
